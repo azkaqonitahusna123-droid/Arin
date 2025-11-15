@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="id" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Arina Firtia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="/_sdk/data_sdk.js"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+        .islamic-gradient {
+            background: linear-gradient(135deg, #059669 0%, #065f46 50%, #d97706 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .skill-tag {
+            background: linear-gradient(45deg, #10b981 0%, #059669 100%);
+        }
+        .achievement-card {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+        }
+        .islamic-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M30 30c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20zm0 0c0 11.046 8.954 20 20 20s20-8.954 20-20-8.954-20-20-20-20 8.954-20 20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+ </head>
+ <body class="h-full font-sans"><!-- Hero Section -->
+  <section class="islamic-gradient islamic-pattern text-white min-h-screen flex items-center justify-center px-4">
+   <div class="text-center max-w-4xl mx-auto"><!-- Profile Photo Placeholder -->
+    <div class="w-40 h-40 mx-auto mb-6 rounded-full bg-white/20 backdrop-blur-sm border-4 border-white/30 flex items-center justify-center">
+     <svg class="w-20 h-20 text-white/70" fill="currentColor" viewbox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+     </svg>
+    </div>
+    <h1 id="hero-name" class="text-5xl md:text-6xl font-bold mb-4">Arina Firtia</h1>
+    <div class="space-y-2 mb-6">
+     <p class="text-xl md:text-2xl text-white/90">Kelas IX • Umur 15 Tahun • Perempuan</p>
+     <p id="school-name" class="text-lg md:text-xl text-white/80 font-medium">IBS PKMKK</p>
+     <p id="school-full" class="text-base md:text-lg text-white/70">Islamic Boarding School Padepokan Kyai Mudrikah Kembang Kuning</p>
+    </div>
+    <div class="flex items-center justify-center gap-4 mb-8">
+     <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+      <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+      </svg>
+     </div><span class="text-white/90 font-medium">Santri Berprestasi</span>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center"><button onclick="scrollToSection('about')" class="bg-white text-green-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors"> Tentang Saya </button> <button onclick="scrollToSection('contact')" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-green-700 transition-colors"> Hubungi Saya </button>
+    </div>
+   </div>
+  </section><!-- About Section -->
+  <section id="about" class="py-20 px-4 bg-gray-50">
+   <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+     <h2 class="text-4xl font-bold text-gray-800 mb-4">Tentang Saya</h2>
+     <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+     <div>
+      <p id="about-description" class="text-lg text-gray-600 mb-6 leading-relaxed">Assalamu'alaikum! Saya Arina Firtia, seorang santri kelas IX di Islamic Boarding School Padepokan Kyai Mudrikah Kembang Kuning. Saya berusia 15 tahun dan memiliki semangat tinggi dalam menuntut ilmu, baik ilmu agama maupun ilmu umum. Saya aktif dalam berbagai kegiatan sekolah dan selalu berusaha menjadi santri yang berprestasi.</p><!-- Academic Info -->
+      <div class="space-y-4">
+       <div class="flex items-center gap-4">
+        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+         <svg class="w-6 h-6 text-green-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z" />
+         </svg>
+        </div>
+        <div>
+         <h4 class="font-semibold text-gray-800">Tingkat Pendidikan</h4>
+         <p class="text-gray-600">Kelas IX (Sembilan) SMP</p>
+        </div>
+       </div>
+       <div class="flex items-center gap-4">
+        <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+         <svg class="w-6 h-6 text-amber-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+         </svg>
+        </div>
+        <div>
+         <h4 class="font-semibold text-gray-800">Status</h4>
+         <p class="text-gray-600">Santri Aktif &amp; Berprestasi</p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-6">Mata Pelajaran Favorit</h3>
+      <div class="grid grid-cols-2 gap-3 mb-8"><span class="skill-tag text-white px-4 py-2 rounded-full text-sm font-medium text-center">Bahasa Arab</span> <span class="skill-tag text-white px-4 py-2 rounded-full text-sm font-medium text-center">Al-Qur'an</span> <span class="skill-tag text-white px-4 py-2 rounded-full text-sm font-medium text-center">Matematika</span> <span class="skill-tag text-white px-4 py-2 rounded-full text-sm font-medium text-center">Bahasa Indonesia</span> <span class="skill-tag text-white px-4 py-2 rounded-full text-sm font-medium text-center">IPA</span> <span class="skill-tag text-white px-4 py-2 rounded-full text-sm font-medium text-center">Fiqh</span>
+      </div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-6">Hobi &amp; Minat</h3>
+      <div class="grid grid-cols-2 gap-3"><span class="bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-medium text-center">Membaca</span> <span class="bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-medium text-center">Kaligrafi</span> <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium text-center">Menulis</span> <span class="bg-indigo-500 text-white px-4 py-2 rounded-full text-sm font-medium text-center">Seni Islam</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Achievements Section -->
+  <section class="py-20 px-4 bg-white">
+   <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+     <h2 class="text-4xl font-bold text-gray-800 mb-4">Prestasi &amp; Pencapaian</h2>
+     <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+     <p class="text-gray-600 mt-4">Beberapa pencapaian yang telah saya raih</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"><!-- Achievement 1 -->
+     <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-green-500">
+      <div class="p-6">
+       <div class="w-12 h-12 achievement-card rounded-full flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+        </svg>
+       </div>
+       <h3 class="text-xl font-bold text-gray-800 mb-2">Juara Hafalan Al-Qur'an</h3>
+       <p class="text-gray-600">Meraih juara 1 dalam lomba hafalan Al-Qur'an tingkat pesantren</p>
+      </div>
+     </div><!-- Achievement 2 -->
+     <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-blue-500">
+      <div class="p-6">
+       <div class="w-12 h-12 achievement-card rounded-full flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+       </div>
+       <h3 class="text-xl font-bold text-gray-800 mb-2">Santri Teladan</h3>
+       <p class="text-gray-600">Terpilih sebagai santri teladan berkat prestasi akademik dan akhlak yang baik</p>
+      </div>
+     </div><!-- Achievement 3 -->
+     <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-purple-500">
+      <div class="p-6">
+       <div class="w-12 h-12 achievement-card rounded-full flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" />
+        </svg>
+       </div>
+       <h3 class="text-xl font-bold text-gray-800 mb-2">Juara Kaligrafi</h3>
+       <p class="text-gray-600">Meraih juara 2 dalam lomba kaligrafi Arab tingkat kabupaten</p>
+      </div>
+     </div><!-- Achievement 4 -->
+     <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-pink-500">
+      <div class="p-6">
+       <div class="w-12 h-12 achievement-card rounded-full flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+        </svg>
+       </div>
+       <h3 class="text-xl font-bold text-gray-800 mb-2">Ranking Teratas</h3>
+       <p class="text-gray-600">Konsisten masuk 3 besar dalam ranking kelas selama 2 tahun berturut-turut</p>
+      </div>
+     </div><!-- Achievement 5 -->
+     <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-indigo-500">
+      <div class="p-6">
+       <div class="w-12 h-12 achievement-card rounded-full flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zM4 18v-6h2.5l6 8h2L7 12V6H4.5C3.67 6 3 6.67 3 7.5S3.67 9 4.5 9H5v9H4z" />
+        </svg>
+       </div>
+       <h3 class="text-xl font-bold text-gray-800 mb-2">Ketua OSIS</h3>
+       <p class="text-gray-600">Terpilih sebagai ketua OSIS periode 2024 berkat kepemimpinan yang baik</p>
+      </div>
+     </div><!-- Achievement 6 -->
+     <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-red-500">
+      <div class="p-6">
+       <div class="w-12 h-12 achievement-card rounded-full flex items-center justify-center mb-4">
+        <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+        </svg>
+       </div>
+       <h3 class="text-xl font-bold text-gray-800 mb-2">Lomba Pidato</h3>
+       <p class="text-gray-600">Juara 1 lomba pidato bahasa Arab dalam peringatan Maulid Nabi</p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Contact Section -->
+  <section id="contact" class="py-20 px-4 bg-gray-50">
+   <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-16">
+     <h2 class="text-4xl font-bold text-gray-800 mb-4">Hubungi Saya</h2>
+     <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+     <p class="text-gray-600 mt-4">Jangan ragu untuk menghubungi saya!</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-12"><!-- Contact Form -->
+     <div>
+      <form id="contact-form" class="space-y-6">
+       <div><label for="name" class="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label> <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+       </div>
+       <div><label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label> <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+       </div>
+       <div><label for="message" class="block text-sm font-medium text-gray-700 mb-2">Pesan</label> <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"></textarea>
+       </div><button type="submit" id="submit-btn" class="w-full bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors"> Kirim Pesan </button>
+      </form>
+      <div id="form-message" class="mt-4 p-4 rounded-lg hidden"></div>
+     </div><!-- Contact Info -->
+     <div>
+      <h3 class="text-2xl font-bold text-gray-800 mb-6">Informasi Kontak</h3>
+      <div class="space-y-6">
+       <div class="flex items-start gap-4">
+        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+         <svg class="w-6 h-6 text-green-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+         </svg>
+        </div>
+        <div>
+         <h4 class="font-semibold text-gray-800">Alamat Sekolah</h4>
+         <p class="text-gray-600">Islamic Boarding School<br>
+          Padepokan Kyai Mudrikah<br>
+          Kembang Kuning</p>
+        </div>
+       </div>
+       <div class="flex items-start gap-4">
+        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+         <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+         </svg>
+        </div>
+        <div>
+         <h4 class="font-semibold text-gray-800">Status</h4>
+         <p class="text-gray-600">Santri Kelas IX<br>
+          Umur 15 Tahun<br>
+          Santri Berprestasi</p>
+        </div>
+       </div>
+       <div class="flex items-start gap-4">
+        <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
+         <svg class="w-6 h-6 text-amber-600" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+         </svg>
+        </div>
+        <div>
+         <h4 class="font-semibold text-gray-800">Prestasi Terbaru</h4>
+         <p class="text-gray-600">Ketua OSIS 2024<br>
+          Juara Hafalan Al-Qur'an<br>
+          Ranking 3 Besar Kelas</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Footer -->
+  <footer class="islamic-gradient text-white py-12 px-4">
+   <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-8">
+     <div>
+      <h3 class="text-xl font-bold mb-4">Arina Firtia</h3>
+      <p class="text-white/80">Santri kelas IX di Islamic Boarding School Padepokan Kyai Mudrikah Kembang Kuning yang bercita-cita menjadi generasi Qur'ani yang bermanfaat.</p>
+     </div>
+     <div>
+      <h4 class="text-lg font-semibold mb-4">Informasi</h4>
+      <ul class="space-y-2">
+       <li><span class="text-white/80">Kelas: IX (Sembilan)</span></li>
+       <li><span class="text-white/80">Umur: 15 Tahun</span></li>
+       <li><span class="text-white/80">Status: Santri Aktif</span></li>
+       <li><span class="text-white/80">Prestasi: Santri Teladan</span></li>
+      </ul>
+     </div>
+     <div>
+      <h4 class="text-lg font-semibold mb-4">Sekolah</h4>
+      <ul class="space-y-2">
+       <li><span class="text-white/80">IBS PKMKK</span></li>
+       <li><span class="text-white/80">Islamic Boarding School</span></li>
+       <li><span class="text-white/80">Padepokan Kyai Mudrikah</span></li>
+       <li><span class="text-white/80">Kembang Kuning</span></li>
+      </ul>
+     </div>
+    </div>
+    <div class="border-t border-white/20 mt-8 pt-8 text-center">
+     <p id="footer-text" class="text-white/80">Barakallahu fiikum - Semoga Allah memberkahi kalian</p>
+     <p class="text-white/60 mt-2">© 2024 Arina Firtia. Profile Santri IBS PKMKK.</p>
+    </div>
+   </div>
+  </footer>
+  <script>
+        // Default configuration
+        const defaultConfig = {
+            full_name: "Arina Firtia",
+            school_name: "IBS PKMKK",
+            school_full_name: "Islamic Boarding School Padepokan Kyai Mudrikah Kembang Kuning",
+            about_description: "Assalamu'alaikum! Saya Arina Firtia, seorang santri kelas IX di Islamic Boarding School Padepokan Kyai Mudrikah Kembang Kuning. Saya berusia 15 tahun dan memiliki semangat tinggi dalam menuntut ilmu, baik ilmu agama maupun ilmu umum. Saya aktif dalam berbagai kegiatan sekolah dan selalu berusaha menjadi santri yang berprestasi.",
+            footer_text: "Barakallahu fiikum - Semoga Allah memberkahi kalian",
+            background_color: "#059669",
+            surface_color: "#ffffff",
+            text_color: "#374151",
+            primary_action_color: "#16a34a",
+            secondary_action_color: "#6b7280",
+            font_family: "Inter",
+            font_size: 16
+        };
+
+        let currentRecordCount = 0;
+
+        // Data handler for contact form submissions
+        const dataHandler = {
+            onDataChanged(data) {
+                currentRecordCount = data.length;
+            }
+        };
+
+        // Initialize Data SDK
+        async function initializeDataSdk() {
+            if (window.dataSdk) {
+                const initResult = await window.dataSdk.init(dataHandler);
+                if (!initResult.isOk) {
+                    console.error("Failed to initialize data SDK");
+                }
+            }
+        }
+
+        // Smooth scroll function
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Handle contact form submission
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            if (currentRecordCount >= 999) {
+                showMessage("Maaf, batas maksimum 999 pesan telah tercapai.", 'error');
+                return;
+            }
+
+            const submitBtn = document.getElementById('submit-btn');
+            const originalText = submitBtn.textContent;
+            
+            // Show loading state
+            submitBtn.textContent = 'Mengirim...';
+            submitBtn.disabled = true;
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value,
+                submitted_at: new Date().toISOString()
+            };
+            
+            if (window.dataSdk) {
+                const result = await window.dataSdk.create(formData);
+                
+                if (result.isOk) {
+                    showMessage('Barakallahu fiik! Pesan Anda telah terkirim. Terima kasih sudah menghubungi saya.', 'success');
+                    document.getElementById('contact-form').reset();
+                } else {
+                    showMessage('Maaf, terjadi kesalahan saat mengirim pesan. Silakan coba lagi.', 'error');
+                }
+            } else {
+                showMessage('Barakallahu fiik! Pesan Anda telah terkirim. Terima kasih sudah menghubungi saya.', 'success');
+                document.getElementById('contact-form').reset();
+            }
+            
+            // Reset button state
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        });
+
+        function showMessage(message, type) {
+            const messageDiv = document.getElementById('form-message');
+            messageDiv.textContent = message;
+            messageDiv.className = `mt-4 p-4 rounded-lg ${type === 'success' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`;
+            messageDiv.classList.remove('hidden');
+            
+            setTimeout(() => {
+                messageDiv.classList.add('hidden');
+            }, 5000);
+        }
+
+        // Element SDK configuration
+        async function onConfigChange(config) {
+            // Update text content
+            document.getElementById('hero-name').textContent = config.full_name || defaultConfig.full_name;
+            document.getElementById('school-name').textContent = config.school_name || defaultConfig.school_name;
+            document.getElementById('school-full').textContent = config.school_full_name || defaultConfig.school_full_name;
+            document.getElementById('about-description').textContent = config.about_description || defaultConfig.about_description;
+            document.getElementById('footer-text').textContent = config.footer_text || defaultConfig.footer_text;
+
+            // Apply colors
+            const backgroundColor = config.background_color || defaultConfig.background_color;
+            const surfaceColor = config.surface_color || defaultConfig.surface_color;
+            const textColor = config.text_color || defaultConfig.text_color;
+            const primaryActionColor = config.primary_action_color || defaultConfig.primary_action_color;
+            const secondaryActionColor = config.secondary_action_color || defaultConfig.secondary_action_color;
+
+            // Apply background color to Islamic gradient sections
+            document.querySelectorAll('.islamic-gradient').forEach(el => {
+                el.style.background = `linear-gradient(135deg, ${backgroundColor} 0%, ${backgroundColor}dd 50%, #d97706 100%)`;
+            });
+            
+            // Apply surface color to cards and sections
+            document.querySelectorAll('.bg-white').forEach(el => {
+                if (!el.closest('footer')) {
+                    el.style.backgroundColor = surfaceColor;
+                }
+            });
+
+            // Apply text color
+            document.querySelectorAll('.text-gray-800, .text-gray-700, .text-gray-600').forEach(el => {
+                el.style.color = textColor;
+            });
+
+            // Apply primary action color
+            document.querySelectorAll('.bg-green-600, .text-green-600, .bg-green-100, .border-green-500').forEach(el => {
+                if (el.classList.contains('bg-green-600')) {
+                    el.style.backgroundColor = primaryActionColor;
+                } else if (el.classList.contains('text-green-600')) {
+                    el.style.color = primaryActionColor;
+                } else if (el.classList.contains('bg-green-100')) {
+                    el.style.backgroundColor = primaryActionColor + '20';
+                } else if (el.classList.contains('border-green-500')) {
+                    el.style.borderColor = primaryActionColor;
+                }
+            });
+
+            // Apply secondary action color
+            document.querySelectorAll('.text-gray-400, .text-white\\/80').forEach(el => {
+                el.style.color = secondaryActionColor;
+            });
+
+            // Apply font family and size
+            const customFont = config.font_family || defaultConfig.font_family;
+            const baseSize = config.font_size || defaultConfig.font_size;
+            const baseFontStack = 'system-ui, -apple-system, sans-serif';
+
+            document.body.style.fontFamily = `${customFont}, ${baseFontStack}`;
+            document.body.style.fontSize = `${baseSize}px`;
+
+            // Scale headings proportionally
+            document.querySelectorAll('h1').forEach(el => {
+                el.style.fontSize = `${baseSize * 3}px`;
+            });
+            document.querySelectorAll('h2').forEach(el => {
+                el.style.fontSize = `${baseSize * 2.25}px`;
+            });
+            document.querySelectorAll('h3').forEach(el => {
+                el.style.fontSize = `${baseSize * 1.5}px`;
+            });
+            document.querySelectorAll('h4').forEach(el => {
+                el.style.fontSize = `${baseSize * 1.125}px`;
+            });
+        }
+
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [
+                    {
+                        get: () => config.background_color || defaultConfig.background_color,
+                        set: (value) => {
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ background_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.surface_color || defaultConfig.surface_color,
+                        set: (value) => {
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ surface_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.text_color || defaultConfig.text_color,
+                        set: (value) => {
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ text_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.primary_action_color || defaultConfig.primary_action_color,
+                        set: (value) => {
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ primary_action_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.secondary_action_color || defaultConfig.secondary_action_color,
+                        set: (value) => {
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ secondary_action_color: value });
+                            }
+                        }
+                    }
+                ],
+                borderables: [],
+                fontEditable: {
+                    get: () => config.font_family || defaultConfig.font_family,
+                    set: (value) => {
+                        if (window.elementSdk) {
+                            window.elementSdk.setConfig({ font_family: value });
+                        }
+                    }
+                },
+                fontSizeable: {
+                    get: () => config.font_size || defaultConfig.font_size,
+                    set: (value) => {
+                        if (window.elementSdk) {
+                            window.elementSdk.setConfig({ font_size: value });
+                        }
+                    }
+                }
+            };
+        }
+
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ["full_name", config.full_name || defaultConfig.full_name],
+                ["school_name", config.school_name || defaultConfig.school_name],
+                ["school_full_name", config.school_full_name || defaultConfig.school_full_name],
+                ["about_description", config.about_description || defaultConfig.about_description],
+                ["footer_text", config.footer_text || defaultConfig.footer_text]
+            ]);
+        }
+
+        // Initialize SDKs
+        async function initializeApp() {
+            await initializeDataSdk();
+            
+            if (window.elementSdk) {
+                window.elementSdk.init({
+                    defaultConfig,
+                    onConfigChange,
+                    mapToCapabilities,
+                    mapToEditPanelValues
+                });
+            }
+        }
+
+        // Initialize when page loads
+        initializeApp();
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99eb694866af797e',t:'MTc2MzE3NDcxMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
